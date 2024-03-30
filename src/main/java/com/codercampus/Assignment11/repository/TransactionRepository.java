@@ -47,5 +47,13 @@ public class TransactionRepository {
 			e.printStackTrace();
 		} 
 		
+		System.out.println("Transactions: " + transactions);
+	}
+	
+	public Transaction findById (Long transactionId) {
+		return transactions.stream()
+						   .filter(transaction -> transaction.getId().equals(transactionId))
+						   .findFirst()
+						   .orElse(null);
 	}
 }

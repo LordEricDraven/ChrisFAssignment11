@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Assignment11Application {
 
-	// This is a test for github
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		SpringApplication.run(Assignment11Application.class, args);
